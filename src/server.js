@@ -7,7 +7,8 @@ const cors = require("cors");
 mongoose.connect(
     "mongodb://localhost/dev",
     {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true  
     }
 );
 var db = mongoose.connection;

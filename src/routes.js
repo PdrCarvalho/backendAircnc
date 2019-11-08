@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
+const Session = require("./controllers/SessionController")
 
-
-routes.get('/',(req,res)=>{res.json({mensagem:"to com sono"})})
+routes.get('/',Session.store);
 
 module.exports =routes;
